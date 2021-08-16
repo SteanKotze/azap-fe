@@ -1,14 +1,14 @@
 import React from 'react'
+import { SmolCard } from '../../components'
 
 const StreamsShow = ({ stream }) => {
   return (
-    <div>
+    <SmolCard>
       {stream.streamer}
       {stream.viewers}
       {stream.listeners}
       {stream.listeningTo}
-      This is totally a stream
-    </div>
+    </SmolCard>
   )
 }
 
