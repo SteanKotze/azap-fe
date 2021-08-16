@@ -1,5 +1,3 @@
-import StreamsIndex from "./streams/StreamsIndex";
+import StreamsIndex from './streams/StreamsIndex'
 
-export {
-  StreamsIndex
-}
+export { StreamsIndex }

@@ -8,12 +8,12 @@ const UsersLoginView = () => {
 
   //  --- Functionality ---
   const redirectToLogin = useCallback(() => {
-    const oauthRedirect = ApiHelper.showLoginRedirect()
+    const oauthRedirect = ApiHelper.showOauthRedirect()
     history.push(oauthRedirect)
   }, [history])
 
   //  --- Response ---
-  return ( 
+  return (
     <div className='h-full flex'>
       <div className='m-auto'>
         <button className='bg-gray-700 hover:bg-gray-600 p-4 rounded' onClick={redirectToLogin}>

@@ -2,9 +2,15 @@ import AjaxHelper from './AjaxHelper'
 
 const ApiHelper = () => {
   return {
-    showLoginRedirect: () => {
-      return AjaxHelper.get("/api/oauth/initiate") // ToDo baseUrl
-    }
+    //  --- OAuth ---
+    showOauthRedirect: () => {
+      return AjaxHelper.get(`/api/oauth/initiate`) // ToDo baseUrl
+    },
+
+    //  --- Streams ---
+    indexStreams: () => {
+      return AjaxHelper.get(`/api/streams`)
+    },
   }
 }
 

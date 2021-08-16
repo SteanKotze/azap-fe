@@ -5,7 +5,7 @@ const ApplicationHomeView = () => {
   return (
     <div>
       This is the home view
-      <StreamsIndex/>
+      <StreamsIndex />
       {/* ToDo: Check if the user is logged in, else redirect to UserLoginView */}
     </div>
   )
