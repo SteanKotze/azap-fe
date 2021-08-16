@@ -1,12 +1,12 @@
 import React from 'react'
 import { Card } from '../../components'
 
-const CreateStreamView = () => {
+const ShowStreamView = () => {
   return (
     <Card>
-      CreateStreamView
+      ShowStreamView
     </Card>
   )
 }
 
-export default CreateStreamView
+export default ShowStreamView

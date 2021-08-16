@@ -5,6 +5,7 @@ import ApiHelper from '../../helpers/ApiHelper'
 import StreamsShow from './StreamsShow'
 
 const StreamsIndex = () => {
+  //  ToDo
   //  --- Variables ---
   const { data } = {data: [
     {
@@ -27,17 +28,18 @@ const StreamsIndex = () => {
   //     </div>
   //   )
 
-  console.log(data)
   return (
     <div>
       <p className='text-center pb-4'>Active Audio Streams</p>
-      {
-        data.map((stream, index) => {
-          return (
-            <StreamsShow key={`streamShow-${index}`} stream={stream} />
-          )
-        })
-      }
+      <div className='flex flex-row flex-wrap'>
+        {
+          data.map((stream, index) => {
+            return (
+              <StreamsShow key={`streamShow-${index}`} stream={stream} />
+            )
+          })
+        }
+      </div>
     </div>
   )
 }

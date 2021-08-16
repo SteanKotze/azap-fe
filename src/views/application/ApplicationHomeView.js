@@ -5,7 +5,6 @@ import { StreamsIndex } from '../../containers'
 const ApplicationHomeView = () => {
   return (
     <div className='h-full'>
-      Azap
       <Card>
         <StreamsIndex />
       </Card>

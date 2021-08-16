@@ -4,7 +4,7 @@ import React, { useMemo } from 'react'
 const Card = ({ children, cardType, className }) => {
   const renderCardType = useMemo(() => {
     if (cardType === 'login') return 'md:bg-gray-800 h-auto 2-96  login-card mx-auto'
-    return 'bg-gray-800 md:mx-10'
+    return 'bg-gray-800'
   }, [cardType])
 
   return (
