@@ -1,19 +1,25 @@
-import logo from './logo.svg'
-import './App.css'
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { Redirect, Route, Switch } from 'react-router'
+import { QueryClient, QueryClientProvider } from 'react-query'
+import { UsersLoginView, ApplicationHomeView } from './views'
 
-function App() {
+const App = () => {
+  const queryClient = new QueryClient()
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <QueryClientProvider client={queryClient}>
+        <div className='h-full'>
+          <Switch>
+            <Route exact path='/login' component={UsersLoginView} />
+            <Switch>
+              <Route exact path='/' component={ApplicationHomeView} />
+              <Redirect to='/' />
+            </Switch>
+          </Switch>
+        </div>
+      </QueryClientProvider>
+    </BrowserRouter>
   )
 }
 
