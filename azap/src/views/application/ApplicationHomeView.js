@@ -1,10 +1,10 @@
 import React from 'react'
-import { StreamsIndex } from '../../components'
+import { StreamsIndex } from '../../containers'
 
 const ApplicationHomeView = () => {
   return (
-    <div>
-      This is the home view
+    <div className='h-full'>
+      Azap
       <StreamsIndex />
       {/* ToDo: Check if the user is logged in, else redirect to UserLoginView */}
     </div>

@@ -1,3 +1,3 @@
-import StreamsIndex from './streams/StreamsIndex'
+import Spinner from './animations/Spinner'
 
-export { StreamsIndex }
+export { Spinner }
