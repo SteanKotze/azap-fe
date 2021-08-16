@@ -1,25 +1,43 @@
 import React from 'react'
 import { useQuery } from 'react-query'
-import ApiHelper from '../../helpers/ApiHelper'
 import { Spinner } from '../../components'
+import ApiHelper from '../../helpers/ApiHelper'
+import StreamsShow from './StreamsShow'
 
 const StreamsIndex = () => {
   //  --- Variables ---
-  const { data, isLoading } = useQuery(['indexStreams'], () => ApiHelper.indexStreams(), {
-    refetchOnWindowFocus: false,
-  })
+  const { data } = {data: [
+    {
+      streamer: "AnthonyZ",
+      viewers: 12987,
+      listeners: 3607,
+      listeningTo: "Kream - Drowning"
+    }
+  ]}
+  //  --- Variables ---
+  // const { data, isLoading } = useQuery(['indexStreams'], () => ApiHelper.indexStreams(), {
+  //   refetchOnWindowFocus: false,
+  // })
 
   //  --- Response ---
-  if (isLoading || !data) return (
-    <div className='h-full flex'>
-      <Spinner className='m-auto' />
-    </div>
-  )
+  // if (isLoading || !data)
+  //   return (
+  //     <div className='h-full flex'>
+  //       <Spinner className='m-auto' />
+  //     </div>
+  //   )
 
+  console.log(data)
   return (
     <div>
-      {/* ToDo Impelement streams index component */}
-      Streams Index
+      <p className='text-center pb-4'>Active Audio Streams</p>
+      {
+        data.map((stream, index) => {
+          return (
+            <StreamsShow key={`streamShow-${index}`} stream={stream} />
+          )
+        })
+      }
     </div>
   )
 }

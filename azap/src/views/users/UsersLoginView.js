@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react'
 import { useHistory } from 'react-router'
+import { Button, Card } from '../../components'
 import ApiHelper from '../../helpers/ApiHelper'
 
 const UsersLoginView = () => {
@@ -16,9 +17,9 @@ const UsersLoginView = () => {
   return (
     <div className='h-full flex'>
       <div className='m-auto'>
-        <button className='bg-gray-700 hover:bg-gray-600 p-4 rounded' onClick={redirectToLogin}>
-          Login With Spotify
-        </button>
+        <Card cardType='login'>
+          <Button onClick={redirectToLogin}>Login With Spotify</Button>
+        </Card>
       </div>
     </div>
   )

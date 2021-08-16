@@ -9,6 +9,14 @@ const ApiHelper = () => {
 
     //  --- Streams ---
     indexStreams: () => {
+      return Promise.resolve([
+        {
+          streamer: "test",
+          viewers: 1987,
+          listeners: 607,
+          listeningTo: "Kream - Drowning"
+        }
+      ])
       return AjaxHelper.get(`/api/streams`)
     },
   }
