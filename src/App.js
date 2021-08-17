@@ -10,7 +10,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
-        <div className='h-full'>
+        <div className='h-full bg-asphalt-200'>
           <Switch>
             <Route path='/oauth/redirect' component={OauthRedirectView} />
             <Route path='/users/login' component={UsersLoginView} />

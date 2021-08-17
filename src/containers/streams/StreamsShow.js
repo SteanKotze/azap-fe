@@ -10,12 +10,12 @@ const StreamsShow = ({ stream }) => {
   return (
     <SmolCard>
       <div className='flex flex-col space-y-2'>
-        <a href={`https://www.twitch.tv/${stream.streamer}`} className='text-center'>
+        <a href={`https://www.twitch.tv/${stream.streamer}`} className='text-center text-azap-gold text-lg'>
           {stream.streamer}
         </a>
-        <p>Viwers: {stream.viewers}</p>
-        <p>Listernes: {stream.listeners}</p>
-        <p>Listening To: {stream.listeningTo}</p>
+        <p>Viewers: {stream.viewers}</p>
+        <p>Listeners: {stream.listeners}</p>
+        <p className='pb-2'>Listening To: {stream.listening_to}</p>
         <Button onClick={() => history.push(`/streams/${stream.streamer}`)}>Go To</Button>
       </div>
     </SmolCard>

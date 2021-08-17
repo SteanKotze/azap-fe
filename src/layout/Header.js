@@ -16,12 +16,12 @@ const Header = () => {
 
   //  --- Response ---
   return (
-    <div className='flex p-4 w-full bg-gray-800 mb-10 shadow-xl'>
+    <div className='flex p-4 w-full bg-asphalt-400 mb-10 shadow-xl'>
       <div className='flex justify-between mx-auto w-full md:w-2/3'>
-        <p className='cursor-pointer' onClick={() => redirectToView('/')}>
+        <p className='cursor-pointer text-azap-gold' onClick={() => redirectToView('/')}>
           Azap
         </p>
-        <p className='cursor-pointer' onClick={() => redirectToView('/streams/create')}>
+        <p className='cursor-pointer text-azap-gold' onClick={() => redirectToView('/streams/create')}>
           New Stream
         </p>
       </div>

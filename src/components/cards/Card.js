@@ -3,8 +3,8 @@ import React, { useMemo } from 'react'
 
 const Card = ({ children, cardType, className }) => {
   const renderCardType = useMemo(() => {
-    if (cardType === 'login') return 'md:bg-gray-800 h-auto 2-96  login-card mx-auto'
-    return 'bg-gray-800'
+    if (cardType === 'login') return 'md:bg-asphalt-400 h-auto 2-96 mx-auto'
+    return 'bg-asphalt-400'
   }, [cardType])
 
   return (
