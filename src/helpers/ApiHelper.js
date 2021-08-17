@@ -5,12 +5,12 @@ const ApiHelper = () => {
   return {
     //  --- OAuth ---
     showOauthRedirect: () => {
-      return AjaxHelper.get(`/api/oauth/initiate`)
+      return AjaxHelper.get(`${process.env.REACT_APP_BACKEND_URL}/api/oauth/initiate`)
     },
 
     //  --- Streams ---
     indexStreams: () => {
-      return AjaxHelper.get(`/api/streams`)
+      return AjaxHelper.get(`${process.env.REACT_APP_BACKEND_URL}/api/streams`)
     },
   }
 }

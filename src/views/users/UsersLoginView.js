@@ -8,9 +8,10 @@ const UsersLoginView = () => {
   const history = useHistory()
 
   //  --- Functionality ---
-  const redirectToLogin = useCallback(() => {
-    const oauthRedirect = ApiHelper.showOauthRedirect()
-    history.push(oauthRedirect)
+  const redirectToLogin = useCallback(async () => {
+    const oauthRedirect = await ApiHelper.showOauthRedirect()
+    console.log(oauthRedirect)
+    // history.push(oauthRedirect)
   }, [history])
 
   //  --- Response ---
