@@ -7,12 +7,12 @@ const AjaxHelper = () => {
         body: body,
         headers: { 'Content-Type': 'application/json' },
       })
-        .then(response => {
+        .then((response) => {
           if (checkAuthorization && response.status === 401) return window.open('/login', '_self')
           if (!checkOk && !response.ok) throw response
           return response.json()
         })
-        .catch(error => {
+        .catch((error) => {
           console.error('Could not POST to resource at ' + url)
         })
     },
@@ -22,13 +22,13 @@ const AjaxHelper = () => {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
       })
-        .then(response => {
+        .then((response) => {
           if (checkAuthorization && response.status === 401) return window.open('/login', '_self')
           if (!checkOk && !response.ok) throw response
           if (parse) return response.json()
           return response.text()
         })
-        .catch(error => {
+        .catch((error) => {
           console.error('Could not GET resource at ' + url, error)
         })
     },
@@ -39,23 +39,23 @@ const AjaxHelper = () => {
         body: body,
         headers: { 'Content-Type': 'application/json' },
       })
-        .then(response => {
+        .then((response) => {
           if (checkAuthorization && response.status === 401) return window.open('/login', '_self')
           if (!checkOk && !response.ok) throw response
           if (!emptyResponse) return response.json()
         })
-        .catch(error => {
+        .catch((error) => {
           console.error('Could not PUT to resource at ' + url, error)
         })
     },
     delete: (url, checkAuthorization = true, checkOk = true) => {
       fetch(url, { method: 'DELETE', credentials: 'include' })
-        .then(response => {
+        .then((response) => {
           if (checkAuthorization && response.status === 401) return window.open('/login', '_self')
           if (!checkOk && !response.ok) throw response
           return response.json()
         })
-        .catch(error => {
+        .catch((error) => {
           console.error('Could not DELETE resource at ' + url, error)
         })
     },

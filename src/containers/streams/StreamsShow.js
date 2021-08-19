@@ -1,6 +1,6 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 import { useHistory } from 'react-router'
-import { Button, SmolCard } from '../../components'
+import { Button, Link, SmolCard } from '../../components'
 
 const StreamsShow = ({ stream }) => {
   //  --- Variables ---
@@ -10,9 +10,9 @@ const StreamsShow = ({ stream }) => {
   return (
     <SmolCard>
       <div className='flex flex-col space-y-2'>
-        <a href={`https://www.twitch.tv/${stream.streamer}`} className='text-center text-azap-gold text-lg'>
+        <Link className='mx-auto' to={`https://www.twitch.tv/${stream.streamer}`} textSize='text-lg' linkType='external'>
           {stream.streamer}
-        </a>
+        </Link>
         <p>Viewers: {stream.viewers}</p>
         <p>Listeners: {stream.listeners}</p>
         <p className='pb-2'>Listening To: {stream.listening_to}</p>

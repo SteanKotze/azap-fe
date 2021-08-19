@@ -31,15 +31,19 @@ module.exports = {
           dark: '#191a1a',
           DEFAULT: '#252629',
           light: '#313536',
-          gold: '#c0b000', //fdd548
           //
           cyan: '#007070',
           purple: '#330070',
           pink: '#700070',
-          red: '#700020' //ae3849
         },
         gold: {
-          DEFAULT: '#c0b000'
+          light: '#fdd548',
+          DEFAULT: '#c0b000',
+        },
+        maroon: {
+          light: '#ae0e2e',
+          DEFAULT: '#700020',
+          200: '#800e2e'
         }
       },
     },

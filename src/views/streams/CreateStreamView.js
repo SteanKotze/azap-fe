@@ -1,8 +1,15 @@
 import React from 'react'
-import { Card } from '../../components'
+import { Card, Spinner } from '../../components'
 
 const CreateStreamView = () => {
-  return <Card>CreateStreamView</Card>
+  return (
+    <Card>
+      CreateStreamView
+      <div className='flex w-full'>
+        <Spinner className='mx-auto'/>
+      </div>
+    </Card>
+  )
 }
 
 export default CreateStreamView

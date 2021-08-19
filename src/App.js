@@ -6,7 +6,10 @@ import { UsersLoginView, ApplicationHomeView, CreateStreamView, OauthRedirectVie
 import Layout from './layout/Layout'
 
 const App = () => {
+  //  --- Variables ---
   const queryClient = new QueryClient()
+
+  //  --- Response ---
   return (
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>

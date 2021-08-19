@@ -15,7 +15,7 @@ const StreamsIndex = () => {
         listeners: 3607,
         listening_to: 'Kream - Drowning',
         platform: 'twitch.tv',
-        up_time: '4h25m17'
+        up_time: '4h25m17',
       },
     ],
   }
