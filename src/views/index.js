@@ -6,4 +6,12 @@ import ShowStreamView from './streams/ShowStreamView'
 import CurrentUserShowView from './users/CurrentUserShowView'
 import UsersShowView from './users/UsersShowView'
 
-export { ApplicationHomeView, OauthPrimaryView, OauthRedirectView, CreateStreamView, ShowStreamView, CurrentUserShowView, UsersShowView  }
+export {
+  ApplicationHomeView,
+  OauthPrimaryView,
+  OauthRedirectView,
+  CreateStreamView,
+  ShowStreamView,
+  CurrentUserShowView,
+  UsersShowView,
+}

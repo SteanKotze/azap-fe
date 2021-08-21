@@ -1,5 +1,3 @@
-import UserIcon from "./UserIcon";
+import UserIcon from './UserIcon'
 
-export {
-  UserIcon
-}
+export { UserIcon }

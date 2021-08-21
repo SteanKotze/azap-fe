@@ -2,8 +2,16 @@ import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { Redirect, Route, Switch } from 'react-router'
 import { QueryClient, QueryClientProvider } from 'react-query'
-import { OauthPrimaryView, ApplicationHomeView, CreateStreamView, OauthRedirectView, ShowStreamView, CurrentUserShowView, UsersShowView } from './views'
 import Layout from './layout/Layout'
+import {
+  OauthPrimaryView,
+  ApplicationHomeView,
+  CreateStreamView,
+  OauthRedirectView,
+  ShowStreamView,
+  CurrentUserShowView,
+  UsersShowView,
+} from './views'
 
 const App = () => {
   //  --- Variables ---
@@ -19,9 +27,9 @@ const App = () => {
             <Route path='/oauth/primary' component={OauthPrimaryView} />
             <Layout>
               <Switch>
-                <Route path='/streams/create' component={CreateStreamView} />
+                <Route exact path='/streams/create' component={CreateStreamView} />
                 <Route path='/streams/:uuid' component={ShowStreamView} />
-                <Route path='/users/me' component={CurrentUserShowView} />
+                <Route exact path='/users/me' component={CurrentUserShowView} />
                 <Route path='/users/:uuid' component={UsersShowView} />
                 <Route exact path='/' component={ApplicationHomeView} />
                 <Redirect to='/' />
