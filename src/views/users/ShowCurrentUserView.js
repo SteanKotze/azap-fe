@@ -2,14 +2,14 @@ import React from 'react'
 import { useHistory } from 'react-router'
 import { Button, Card, Spinner } from '../../components'
 
-const CurrentUserShowView = () => {
+const ShowCurrentUserView = () => {
   //  --- Variables ---
   const history = useHistory()
 
   //  --- Response ---
   return (
     <Card>
-      CurrentUserShowView
+      ShowCurrentUserView
       <div className='flex w-full'>
         <Spinner className='mx-auto' />
       </div>
@@ -20,4 +20,4 @@ const CurrentUserShowView = () => {
   )
 }
 
-export default CurrentUserShowView
+export default ShowCurrentUserView

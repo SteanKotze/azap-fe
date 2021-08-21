@@ -1,4 +1,3 @@
-import StreamsIndex from './streams/StreamsIndex'
-import StreamsShowCard from './streams/StreamsShowCard'
+import IndexStreams from './streams/IndexStreams'
 
-export { StreamsIndex, StreamsShowCard }
+export { IndexStreams }

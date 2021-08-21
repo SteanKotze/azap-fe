@@ -1,10 +1,10 @@
 import React from 'react'
 import { Card, Spinner } from '../../components'
 
-const UsersShowView = () => {
+const ShowUsersView = () => {
   return (
     <Card>
-      CreateStreamView
+      ShowUsersView
       <div className='flex w-full'>
         <Spinner className='mx-auto' />
       </div>
@@ -12,4 +12,4 @@ const UsersShowView = () => {
   )
 }
 
-export default UsersShowView
+export default ShowUsersView

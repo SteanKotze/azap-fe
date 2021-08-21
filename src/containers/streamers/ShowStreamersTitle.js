@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import { Link } from '../../components'
 
-const StreamersTitle = ({ streamer }) => {
+const ShowStreamersTitle = ({ streamer }) => {
   const renderCss = useMemo(() => {
     switch (streamer.platform) {
       case 'twitch':
@@ -30,4 +30,4 @@ const StreamersTitle = ({ streamer }) => {
   )
 }
 
-export default StreamersTitle
+export default ShowStreamersTitle

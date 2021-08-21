@@ -5,12 +5,13 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import Layout from './layout/Layout'
 import {
   OauthPrimaryView,
-  ApplicationHomeView,
+  ShowHomeView,
   CreateStreamView,
   OauthRedirectView,
   ShowStreamView,
-  CurrentUserShowView,
-  UsersShowView,
+  ShowCurrentUserView,
+  ShowUsersView,
+  ShowCurrentStreamView,
 } from './views'
 
 const App = () => {
@@ -28,10 +29,11 @@ const App = () => {
             <Layout>
               <Switch>
                 <Route exact path='/streams/create' component={CreateStreamView} />
-                <Route path='/streams/:uuid' component={ShowStreamView} />
-                <Route exact path='/users/me' component={CurrentUserShowView} />
-                <Route path='/users/:uuid' component={UsersShowView} />
-                <Route exact path='/' component={ApplicationHomeView} />
+                <Route exact path='/streams/me' component={ShowCurrentStreamView} />
+                <Route exact path='/users/me' component={ShowCurrentUserView} />
+                <Route path='/users/:uuid/stream' component={ShowStreamView} />
+                <Route path='/users/:uuid' component={ShowUsersView} />
+                <Route exact path='/' component={ShowHomeView} />
                 <Redirect to='/' />
               </Switch>
             </Layout>

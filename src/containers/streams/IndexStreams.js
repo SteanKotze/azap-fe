@@ -2,9 +2,9 @@ import React from 'react'
 import { useQuery } from 'react-query'
 import { Spinner } from '../../components'
 import ApiHelper from '../../helpers/ApiHelper'
-import StreamsShowCard from './StreamsShowCard'
+import ShowSmolStreamsCard from './ShowSmolStreamsCard'
 
-const StreamsIndex = () => {
+const IndexStreams = () => {
   //  --- Variables ---
   const { data } = {
     data: [
@@ -50,11 +50,11 @@ const StreamsIndex = () => {
       <p className='text-center pb-4 text-2xl'>Active Audio Streams</p>
       <div className='flex flex-row flex-wrap space-x-4'>
         {data.map((stream, index) => {
-          return <StreamsShowCard key={`streamShow-${index}`} stream={stream} />
+          return <ShowSmolStreamsCard key={`streamShow-${index}`} stream={stream} />
         })}
       </div>
     </div>
   )
 }
 
-export default StreamsIndex
+export default IndexStreams

@@ -1,16 +1,16 @@
 import React from 'react'
 import { Card } from '../../components'
-import { StreamsIndex } from '../../containers'
+import { IndexStreams } from '../../containers'
 
-const ApplicationHomeView = () => {
+const ShowHomeView = () => {
   return (
     <div className='h-full'>
       <Card>
-        <StreamsIndex />
+        <IndexStreams />
       </Card>
       {/* ToDo: Check if the user is logged in, else redirect to UserLoginView */}
     </div>
   )
 }
 
-export default ApplicationHomeView
+export default ShowHomeView
