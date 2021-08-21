@@ -23,7 +23,7 @@ const ShowStreamerTitle = ({ streamer }) => {
   return (
     <Link className='mx-auto my-auto' to={renderChannelLink} textSize='text-xl' linkType='external'>
       <div className='flex flex-row mx-auto space-x-3'>
-        <img className={renderCss} src={`images/${streamer.platform}Logo.png`} alt={`${streamer.platform} logo`} />
+        <img className={renderCss} src={`images/logos/${streamer.platform}.png`} alt={`${streamer.platform} logo`} />
         <p>{streamer.name}</p>
       </div>
     </Link>

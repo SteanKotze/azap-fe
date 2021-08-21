@@ -4,8 +4,8 @@ import { Link } from '../../components'
 const IndexStreamsRedirectCard = ({ children }) => {
   return (
     <Link to='/streams' linkType='div'>
-      <div className={`md:rounded-2xl md:shadow-xl bg-maroon animate-pulse-slow`}>
-        <div className='h-full p-8 pt-0 md:pt-8 flex justify-center'>
+      <div className='animate-pulse-slow bg-maroon border md:rounded-2xl md:shadow-xl'>
+        <div className='flex h-full justify-center md:pt-8 p-8 pt-0'>
           <p className='text-xl'>View all active audio streams!</p>
         </div>
       </div>
