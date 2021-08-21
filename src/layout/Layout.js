@@ -1,13 +1,17 @@
 import React from 'react'
+import Footer from './Footer'
 import Header from './Header'
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <Header />
-      <div className='flex w-full justify-center'>
-        <div className='w-full md:w-2/3 mx-auto'>{children}</div>
+      <div className='min-h-screen'>
+        <Header />
+        <div className='flex w-full justify-center overflow-auto'>
+          <div className='w-full md:w-2/3 mx-auto'>{children}</div>
+        </div>
       </div>
+      <Footer />
     </div>
   )
 }

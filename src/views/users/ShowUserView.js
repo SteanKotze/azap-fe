@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Spinner } from '../../components'
 
-const ShowUsersView = () => {
+const ShowUserView = () => {
   return (
     <Card>
       ShowUsersView
@@ -12,4 +12,4 @@ const ShowUsersView = () => {
   )
 }
 
-export default ShowUsersView
+export default ShowUserView

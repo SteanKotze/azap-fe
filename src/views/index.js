@@ -7,7 +7,7 @@ import CreateStreamView from './streams/CreateStreamView'
 import ShowCurrentStreamView from './streams/ShowCurrentStreamView'
 import ShowStreamView from './streams/ShowStreamView'
 import ShowCurrentUserView from './users/ShowCurrentUserView'
-import ShowUsersView from './users/ShowUsersView'
+import ShowUserView from './users/ShowUserView'
 
 export {
   ShowHomeView,
@@ -19,5 +19,5 @@ export {
   ShowCurrentStreamView,
   ShowStreamView,
   ShowCurrentUserView,
-  ShowUsersView,
+  ShowUserView,
 }

@@ -10,7 +10,7 @@ import {
   OauthRedirectView,
   ShowStreamView,
   ShowCurrentUserView,
-  ShowUsersView,
+  ShowUserView,
   ShowCurrentStreamView,
   OauthSecondaryView,
   ShowStatisticsView,
@@ -35,7 +35,7 @@ const App = () => {
                 <Route exact path='/streams/me' component={ShowCurrentStreamView} />
                 <Route exact path='/users/me' component={ShowCurrentUserView} />
                 <Route path='/users/:uuid/stream' component={ShowStreamView} />
-                <Route path='/users/:uuid' component={ShowUsersView} />
+                <Route path='/users/:uuid' component={ShowUserView} />
                 <Route exact path='/statistics' component={ShowStatisticsView} />
                 <Route exact path='/' component={ShowHomeView} />
                 <Redirect to='/' />
