@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router'
-import { Button, Link, SmolCard } from '../../components'
+import { Button, SmolCard } from '../../components'
 import StreamersTitle from '../streamers/StreamersTitle'
 
 const StreamsShowCard = ({ stream }) => {

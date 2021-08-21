@@ -3,7 +3,7 @@ import { useHistory } from 'react-router'
 import { Button, Card } from '../../components'
 import ApiHelper from '../../helpers/ApiHelper'
 
-const UsersLoginView = () => {
+const OauthPrimaryView = () => {
   //  --- Variables ---
   const history = useHistory()
 
@@ -26,4 +26,4 @@ const UsersLoginView = () => {
   )
 }
 
-export default UsersLoginView
+export default OauthPrimaryView
