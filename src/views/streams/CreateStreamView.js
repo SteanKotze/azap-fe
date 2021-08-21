@@ -6,7 +6,7 @@ const CreateStreamView = () => {
     <Card>
       CreateStreamView
       <div className='flex w-full'>
-        <Spinner className='mx-auto'/>
+        <Spinner className='mx-auto' />
       </div>
     </Card>
   )

@@ -19,7 +19,7 @@ const AjaxHelper = () => {
     get: (url, checkOk = true, parse = true) => {
       return fetch(url, {
         method: 'GET',
-        headers: { 'Content-Type': 'application/json', 'Host': 'localhost:4000' },
+        headers: { 'Content-Type': 'application/json', Host: 'localhost:4000' },
       })
         .then((response) => {
           if (checkOk && !response.ok) throw response

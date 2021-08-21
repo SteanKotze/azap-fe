@@ -43,8 +43,8 @@ module.exports = {
         maroon: {
           light: '#ae0e2e',
           DEFAULT: '#700020',
-          200: '#800e2e'
-        }
+          200: '#800e2e',
+        },
       },
     },
   },

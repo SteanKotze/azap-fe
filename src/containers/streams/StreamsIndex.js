@@ -12,7 +12,7 @@ const StreamsIndex = () => {
         streamer: {
           platform: 'twitch',
           channel: 'AnthonyZ',
-          name: 'AnthonyZ'
+          name: 'AnthonyZ',
         },
         viewers: 12987,
         listeners: 3607,
@@ -23,13 +23,13 @@ const StreamsIndex = () => {
         streamer: {
           platform: 'youtube',
           channel: 'UCWxlUwW9BgGISaakjGM37aw',
-          name: 'Valkyrae'
+          name: 'Valkyrae',
         },
         viewers: 21370,
         listeners: 7016,
         listening_to: 'Kream - Drowning',
         up_time: '4h25m17',
-      }
+      },
     ],
   }
   //  --- Variables ---
