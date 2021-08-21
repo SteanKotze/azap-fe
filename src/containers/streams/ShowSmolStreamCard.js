@@ -1,9 +1,9 @@
 import React from 'react'
 import { useHistory } from 'react-router'
 import { Button, SmolCard } from '../../components'
-import ShowStreamersTitle from '../streamers/ShowStreamersTitle'
+import { ShowStreamerTitle } from '..'
 
-const ShowSmolStreamsCard = ({ stream }) => {
+const ShowSmolStreamCard = ({ stream }) => {
   //  --- Variables ---
   const history = useHistory()
 
@@ -11,7 +11,7 @@ const ShowSmolStreamsCard = ({ stream }) => {
   return (
     <SmolCard>
       <div className='flex flex-col space-y-2'>
-        <ShowStreamersTitle streamer={stream.streamer} />
+        <ShowStreamerTitle streamer={stream.streamer} />
         <p>Viewers: {stream.viewers}</p>
         <p>Listeners: {stream.listeners}</p>
         <p className='pb-2'>Listening To: {stream.listening_to}</p>
@@ -21,4 +21,4 @@ const ShowSmolStreamsCard = ({ stream }) => {
   )
 }
 
-export default ShowSmolStreamsCard
+export default ShowSmolStreamCard

@@ -1,8 +1,5 @@
 import React from 'react'
-import { useQuery } from 'react-query'
-import { Spinner } from '../../components'
-import ApiHelper from '../../helpers/ApiHelper'
-import ShowSmolStreamsCard from './ShowSmolStreamsCard'
+import ShowSmolStreamCard from './ShowSmolStreamCard'
 
 const IndexStreams = () => {
   //  --- Variables ---
@@ -34,25 +31,13 @@ const IndexStreams = () => {
       },
     ],
   }
-  //  --- Variables ---
-  // const { data, isLoading } = useQuery(['indexStreams'], () => ApiHelper.indexStreams(), {
-  //   refetchOnWindowFocus: false,
-  // })
-
-  //  --- Response ---
-  // if (isLoading || !data)
-  //   return (
-  //     <div className='h-full flex'>
-  //       <Spinner className='m-auto' />
-  //     </div>
-  //   )
 
   return (
     <div>
       <p className='text-center pb-4 text-2xl'>Active Audio Streams</p>
       <div className='flex flex-row flex-wrap space-x-4'>
         {data.map((stream, index) => {
-          return <ShowSmolStreamsCard key={`streamShow-${index}`} stream={stream} />
+          return <ShowSmolStreamCard key={`streamShow-${index}`} stream={stream} />
         })}
       </div>
     </div>

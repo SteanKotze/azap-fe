@@ -9,8 +9,8 @@ const ShowStatisticsCard = () => {
   //  --- Response ---
   return (
     <Card>
-      ShowStatisticsCard #ToDo
-      <div className='flex justify-center'>
+      Here we will display a summary of the platform statistics #ToDo
+      <div className='flex justify-center pt-4'>
         <Button onClick={() => history.push('/statistics')}>All the Numbers!</Button>
       </div>
     </Card>

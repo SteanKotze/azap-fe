@@ -10,7 +10,6 @@ const ShowCurrentStreamView = () => {
       </div>
     </Card>
   )
-
 }
 
 export default ShowCurrentStreamView

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'pulse-slow': 'pulse 4s infinite'
+        'pulse-slow': 'pulse 4s infinite',
       },
       colors: {
         asphalt: {
