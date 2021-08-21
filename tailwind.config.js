@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      animation: {
+        'pulse-slow': 'pulse 4s infinite'
+      },
       colors: {
         asphalt: {
           light: '#303030',

@@ -4,6 +4,7 @@ import OauthPrimaryView from './oauth/OauthPrimaryView'
 import OauthRedirectView from './oauth/OauthRedirectView'
 import OauthSecondaryView from './oauth/OauthSecondaryView'
 import CreateStreamView from './streams/CreateStreamView'
+import IndexStreamsView from './streams/IndexStreamsView'
 import ShowCurrentStreamView from './streams/ShowCurrentStreamView'
 import ShowStreamView from './streams/ShowStreamView'
 import ShowCurrentUserView from './users/ShowCurrentUserView'
@@ -16,6 +17,7 @@ export {
   OauthRedirectView,
   OauthSecondaryView,
   CreateStreamView,
+  IndexStreamsView,
   ShowCurrentStreamView,
   ShowStreamView,
   ShowCurrentUserView,

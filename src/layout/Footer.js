@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from '../components'
-import { UserIcon } from '../components/icons'
 
 const Footer = () => {
   //  --- Response ---

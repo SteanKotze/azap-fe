@@ -14,6 +14,7 @@ import {
   ShowCurrentStreamView,
   OauthSecondaryView,
   ShowStatisticsView,
+  IndexStreamsView,
 } from './views'
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
               <Switch>
                 <Route exact path='/streams/create' component={CreateStreamView} />
                 <Route exact path='/streams/me' component={ShowCurrentStreamView} />
+                <Route exact path='/streams' component={IndexStreamsView} />
                 <Route exact path='/users/me' component={ShowCurrentUserView} />
                 <Route path='/users/:uuid/stream' component={ShowStreamView} />
                 <Route path='/users/:uuid' component={ShowUserView} />

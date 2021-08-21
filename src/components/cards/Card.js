@@ -8,7 +8,7 @@ const Card = ({ children, cardType, className }) => {
   }, [cardType])
 
   return (
-    <div className={` md:rounded-2xl md:shadow-xl ${renderCardType} ${className}`}>
+    <div className={`md:rounded-2xl md:shadow-xl ${renderCardType} ${className}`}>
       <div className={`${cardType === 'login' ? 'md:px-16 md:py-12 h-full' : 'h-full p-8 pt-0 md:pt-8'}`}>
         {children}
       </div>

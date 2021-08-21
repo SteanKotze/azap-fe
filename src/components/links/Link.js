@@ -16,10 +16,19 @@ const Link = ({ children, className, linkType, to, textSize }) => {
 
   //  --- Response ---
   if (linkType === 'external')
+  return (
+    <a className={`cursor-pointer text-gold hover:text-gold-light ${className || ''} ${textSize || ''}`} href={to}>
+      {children}
+    </a>
+  )
+
+  if (linkType === 'div')
     return (
-      <a className={`cursor-pointer text-gold hover:text-gold-light ${className || ''} ${textSize || ''}`} href={to}>
+      <div
+        className={`cursor-pointer ${className || ''} ${textSize || ''}`} href={to}
+        onClick={() => redirectTo(to)}>
         {children}
-      </a>
+      </div>
     )
 
   return (
