@@ -25,7 +25,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
-        <div className='h-full bg-asphalt-200'>
+        <div className='h-full'>
           <Switch>
             <Route path='/oauth/redirect' component={OauthRedirectView} />
             <Route path='/oauth/primary' component={OauthPrimaryView} />

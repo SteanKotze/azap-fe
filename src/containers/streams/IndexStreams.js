@@ -37,7 +37,7 @@ const IndexStreams = () => {
       <p className='text-center pb-4 text-2xl'>Active Audio Streams</p>
       <div className='flex flex-row flex-wrap space-x-4'>
         {data.map((stream, index) => {
-          return <ShowSmolStreamCard key={`streamShow-${index}`} stream={stream} />
+          return <ShowSmolStreamCard className='w-64' key={`streamShow-${index}`} stream={stream} />
         })}
       </div>
     </div>

@@ -3,8 +3,7 @@ import { Link } from '../../components'
 
 const IndexStreamerPlatformLinks = ({ streamer }) => {
   const renderPlatfomLink = useCallback((platform) => {
-    switch (platform)
-    {
+    switch (platform) {
       case 'spotify':
         return (
           <Link linkType='external' className='my-auto'>
@@ -46,12 +45,10 @@ const IndexStreamerPlatformLinks = ({ streamer }) => {
 
   return (
     <div className='flex flex-row space-x-2'>
-      {
-        streamer.platforms.map(platform => {
-          if (!platform.authenticated) return null
-          return renderPlatfomLink(platform.name.toLowerCase())
-        })
-      }
+      {streamer.platforms.map((platform) => {
+        if (!platform.authenticated) return null
+        return renderPlatfomLink(platform.name.toLowerCase())
+      })}
     </div>
   )
 }
