@@ -5,7 +5,7 @@ const AjaxHelper = () => {
         credentials: 'include',
         method: 'POST',
         body: body,
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Sec-Fetch-Mode': 'navigate' },
       })
         .then((response) => {
           if (checkAuthorization && response.status === 401) return window.open('/login', '_self')
@@ -16,20 +16,18 @@ const AjaxHelper = () => {
           console.error('Could not POST to resource at ' + url)
         })
     },
-    get: (url, checkAuthorization = true, checkOk = true, parse = true) => {
+    get: (url, checkOk = true, parse = true) => {
       return fetch(url, {
-        credentials: 'include',
         method: 'GET',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Host': 'localhost:4000' },
       })
         .then((response) => {
-          if (checkAuthorization && response.status === 401) return window.open('/login', '_self')
-          if (!checkOk && !response.ok) throw response
+          if (checkOk && !response.ok) throw response
           if (parse) return response.json()
-          return response.text()
         })
         .catch((error) => {
-          console.error('Could not GET resource at ' + url, error)
+          console.info('Could not GET resource at ' + url)
+          console.error(error)
         })
     },
     put: (url, body, checkAuthorization = true, checkOk = true, emptyResponse = false) => {

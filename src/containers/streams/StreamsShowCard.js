@@ -1,8 +1,9 @@
 import React from 'react'
 import { useHistory } from 'react-router'
 import { Button, Link, SmolCard } from '../../components'
+import StreamersTitle from '../streamers/StreamersTitle'
 
-const StreamsShow = ({ stream }) => {
+const StreamsShowCard = ({ stream }) => {
   //  --- Variables ---
   const history = useHistory()
 
@@ -10,9 +11,7 @@ const StreamsShow = ({ stream }) => {
   return (
     <SmolCard>
       <div className='flex flex-col space-y-2'>
-        <Link className='mx-auto' to={`https://www.twitch.tv/${stream.streamer}`} textSize='text-lg' linkType='external'>
-          {stream.streamer}
-        </Link>
+        <StreamersTitle streamer={stream.streamer} />
         <p>Viewers: {stream.viewers}</p>
         <p>Listeners: {stream.listeners}</p>
         <p className='pb-2'>Listening To: {stream.listening_to}</p>
@@ -22,4 +21,4 @@ const StreamsShow = ({ stream }) => {
   )
 }
 
-export default StreamsShow
+export default StreamsShowCard

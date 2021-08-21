@@ -1,4 +1,5 @@
+import StreamersPlatformShow from './streamers/StreamersPlatformShow'
 import StreamsIndex from './streams/StreamsIndex'
-import StreamsShow from './streams/StreamsShow'
+import StreamsShowCard from './streams/StreamsShowCard'
 
-export { StreamsIndex, StreamsShow }
+export { StreamersPlatformShow, StreamsIndex, StreamsShowCard }

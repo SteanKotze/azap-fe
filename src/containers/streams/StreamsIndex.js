@@ -2,21 +2,34 @@ import React from 'react'
 import { useQuery } from 'react-query'
 import { Spinner } from '../../components'
 import ApiHelper from '../../helpers/ApiHelper'
-import StreamsShow from './StreamsShow'
+import StreamsShowCard from './StreamsShowCard'
 
 const StreamsIndex = () => {
-  //  ToDo
   //  --- Variables ---
   const { data } = {
     data: [
       {
-        streamer: 'AnthonyZ',
+        streamer: {
+          platform: 'twitch',
+          channel: 'AnthonyZ',
+          name: 'AnthonyZ'
+        },
         viewers: 12987,
         listeners: 3607,
         listening_to: 'Kream - Drowning',
-        platform: 'twitch.tv',
         up_time: '4h25m17',
       },
+      {
+        streamer: {
+          platform: 'youtube',
+          channel: 'UCWxlUwW9BgGISaakjGM37aw',
+          name: 'Valkyrae'
+        },
+        viewers: 21370,
+        listeners: 7016,
+        listening_to: 'Kream - Drowning',
+        up_time: '4h25m17',
+      }
     ],
   }
   //  --- Variables ---
@@ -35,9 +48,9 @@ const StreamsIndex = () => {
   return (
     <div>
       <p className='text-center pb-4 text-2xl'>Active Audio Streams</p>
-      <div className='flex flex-row flex-wrap'>
+      <div className='flex flex-row flex-wrap space-x-4'>
         {data.map((stream, index) => {
-          return <StreamsShow key={`streamShow-${index}`} stream={stream} />
+          return <StreamsShowCard key={`streamShow-${index}`} stream={stream} />
         })}
       </div>
     </div>
