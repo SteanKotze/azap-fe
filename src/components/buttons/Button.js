@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Button = ({ children, className, enabled = true, onClick, ...props }) => {
+const Button = ({ background, children, className, enabled = true, onClick, ...props }) => {
   if (enabled)
     return (
       <button
-        className={`bg-maroon border focus:outline-none h-9 my-auto px-3 rounded-md hover:bg-maroon-light ${
-          className || ''
+        className={`border focus:outline-none h-9 my-auto px-3 rounded-md ${className || ''} ${
+          background || 'bg-maroon hover:bg-maroon-light'
         }`}
         onClick={onClick}
         {...props}>

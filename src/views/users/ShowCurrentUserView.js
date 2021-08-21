@@ -47,7 +47,10 @@ const ShowCurrentUserView = () => {
         <div className='flex flex-row space-x-4'>
           <SmolCard className='w-1/3'>
             <div className='flex flex-col space-y-4 py-2'>
-              <Button className='mx-auto w-2/3 animate-pulse' onClick={() => history.push('/streams/create')}>
+              <Button
+                background='bg-maroon-light'
+                className='mx-auto w-2/3 animate-pulse'
+                onClick={() => history.push('/streams/create')}>
                 Go Live!
               </Button>
               {data.platforms.map((platform) => {

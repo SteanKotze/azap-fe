@@ -6,37 +6,37 @@ const IndexStreamerPlatformLinks = ({ streamer }) => {
     switch (platform) {
       case 'spotify':
         return (
-          <Link linkType='external' className='my-auto'>
+          <Link linkType='external' className='my-auto' key={platform}>
             <img className='w-5 h-5' src='/images/logos/spotify.png' alt='spotify-logo' />
           </Link>
         )
       case 'twitch':
         return (
-          <Link linkType='external' className='my-auto'>
+          <Link linkType='external' className='my-auto' key={platform}>
             <img className='w-5 h-6' src='/images/logos/twitch.png' alt='twitch-logo' />
           </Link>
         )
       case 'youtube':
         return (
-          <Link linkType='external' className='my-auto'>
+          <Link linkType='external' className='my-auto' key={platform}>
             <img className='w-7 h-5' src='/images/logos/youtube.png' alt='youtube-logo' />
           </Link>
         )
       case 'google':
         return (
-          <Link linkType='external' className='my-auto'>
+          <Link linkType='external' className='my-auto' key={platform}>
             <img className='w-5 h-5' src='/images/logos/google.png' alt='google-logo' />
           </Link>
         )
       case 'apple':
         return (
-          <Link linkType='external' className='my-auto'>
+          <Link linkType='external' className='my-auto' key={platform}>
             <img className='w-5 h-6' src='/images/logos/apple.svg' alt='apple-logo' />
           </Link>
         )
       default:
         return (
-          <Link linkType='external' className='my-auto'>
+          <Link linkType='external' className='my-auto' key={platform}>
             <img className='w-5 h-5' src={`/images/logos/${platform}.png`} alt={`${platform}-logo`} />
           </Link>
         )
