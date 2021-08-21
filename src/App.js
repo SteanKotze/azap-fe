@@ -12,6 +12,8 @@ import {
   ShowCurrentUserView,
   ShowUsersView,
   ShowCurrentStreamView,
+  OauthSecondaryView,
+  ShowStatisticsView,
 } from './views'
 
 const App = () => {
@@ -26,6 +28,7 @@ const App = () => {
           <Switch>
             <Route path='/oauth/redirect' component={OauthRedirectView} />
             <Route path='/oauth/primary' component={OauthPrimaryView} />
+            <Route path='/oauth/secondary' component={OauthSecondaryView} />
             <Layout>
               <Switch>
                 <Route exact path='/streams/create' component={CreateStreamView} />
@@ -33,6 +36,7 @@ const App = () => {
                 <Route exact path='/users/me' component={ShowCurrentUserView} />
                 <Route path='/users/:uuid/stream' component={ShowStreamView} />
                 <Route path='/users/:uuid' component={ShowUsersView} />
+                <Route exact path='/statistics' component={ShowStatisticsView} />
                 <Route exact path='/' component={ShowHomeView} />
                 <Redirect to='/' />
               </Switch>

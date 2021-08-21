@@ -13,7 +13,7 @@ const ShowCurrentUserView = () => {
       <div className='flex w-full'>
         <Spinner className='mx-auto' />
       </div>
-      <div className='flex justify-center'>
+      <div className='flex justify-center mt-4'>
         <Button onClick={() => history.push('/streams/create')}>Create Stream</Button>
       </div>
     </Card>

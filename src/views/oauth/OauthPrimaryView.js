@@ -8,7 +8,7 @@ const OauthPrimaryView = () => {
   const history = useHistory()
 
   //  --- Functionality ---
-  const redirectToLogin = useCallback(async () => {
+  const spotifyLogin = useCallback(async () => {
     const oauthRedirect = await ApiHelper.showOauthRedirect()
     console.log(oauthRedirect)
     // history.push(oauthRedirect)
@@ -19,7 +19,7 @@ const OauthPrimaryView = () => {
     <div className='h-full flex'>
       <div className='m-auto'>
         <Card cardType='login'>
-          <Button onClick={redirectToLogin}>Login With Spotify</Button>
+          <Button onClick={spotifyLogin}>Login With Spotify</Button>
         </Card>
       </div>
     </div>
