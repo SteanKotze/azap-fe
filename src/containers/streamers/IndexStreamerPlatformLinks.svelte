@@ -26,8 +26,7 @@
           <img
             class="w-5 h-5"
             src={`/images/logos/${platform.name}.png`}
-            alt={`${platform.name}-logo`}
-          />
+            alt={`${platform.name}-logo`} />
         </Link>
       {/if}
     {/if}

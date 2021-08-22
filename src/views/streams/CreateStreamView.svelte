@@ -26,8 +26,7 @@
       <TextInput
         class_name="text-azap-dark w-2/3"
         bind:value={stream_title}
-        name="new-stream-title"
-      />
+        name="new-stream-title" />
     </div>
     <div class="flex flex-row w-full">
       <label class="w-1/3" for="stream-platform-select">Stream Platform:</label>
@@ -35,8 +34,7 @@
         bind:value={streaming_platform}
         class_name="w-40"
         options={streaming_platforms}
-        name="stream-platform-select"
-      />
+        name="stream-platform-select" />
     </div>
     <div class="flex flex-row w-full mt-5">
       <label class="w-1/3" for="music-platform-select">Music Platform:</label>
@@ -44,8 +42,7 @@
         class_name="w-40"
         options={music_platforms}
         bind:value={music_platform}
-        name="music-platform-select"
-      />
+        name="music-platform-select" />
     </div>
     <Button class_name="mx-auto" on_click={create_stream}>Start Stream</Button>
   </div>

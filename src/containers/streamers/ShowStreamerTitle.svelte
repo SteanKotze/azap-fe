@@ -30,8 +30,7 @@
     <img
       class={render_css()}
       src={`images/logos/${streamer.platform}.png`}
-      alt={`${streamer.platform} logo`}
-    />
+      alt={`${streamer.platform} logo`} />
     <p>{streamer.name}</p>
   </div>
 </Link>

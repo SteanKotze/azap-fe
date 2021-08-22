@@ -8,14 +8,12 @@
 {#if enabled}
   <button
     class={`border focus:outline-none h-9 my-auto px-3 rounded-md ${class_name} ${background}`}
-    on:click={on_click}
-  >
+    on:click={on_click}>
     <slot />
   </button>
 {:else}
   <div
-    class={`bg-maroon border cursor-not-allowed flex focus:outline-none h-9 my-auto opacity-30 px-3 rounded-md ${class_name}`}
-  >
+    class={`bg-maroon border cursor-not-allowed flex focus:outline-none h-9 my-auto opacity-30 px-3 rounded-md ${class_name}`}>
     <p class="m-auto">
       <slot />
     </p>

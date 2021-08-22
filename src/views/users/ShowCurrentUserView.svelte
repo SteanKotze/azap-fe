@@ -15,14 +15,12 @@
       <SmolCard class_name="w-1/3">
         <div class="flex flex-col space-y-4 py-2">
           <Button class_name="mx-auto w-2/3" on_click={() => navigate('/streams/create')}
-            >Go Live!</Button
-          >
+            >Go Live!</Button>
           {#each data.platforms as platform}
             <Button
               class_name="mx-auto w-2/3"
               enabled={!platform.authenticated}
-              on_click={() => navigate(`/api/oauth/${platform.name.toLowerCase()}`)}
-            >
+              on_click={() => navigate(`/api/oauth/${platform.name.toLowerCase()}`)}>
               + {platform.name}
             </Button>
           {/each}

@@ -14,7 +14,6 @@
   {to}
   class={`cursor-pointer ${text_color} ${
     hover ? 'hover:text-gold-light' : ''
-  } ${class_name} ${text_size}`}
->
+  } ${class_name} ${text_size}`}>
   <slot />
 </Link>
