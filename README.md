@@ -1,5 +1,3 @@
-# To install the project
-`npm run clean`
+# Prettier
 
-# To run the project
-`npm start`
+`prettier --write --plugin-search-dir=. ./**/*.html`

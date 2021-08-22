@@ -1,3 +1,3 @@
-import UserIcon from './UserIcon'
+import UserIcon from './UserIcon.svelte'
 
 export { UserIcon }

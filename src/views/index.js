@@ -1,18 +1,18 @@
-import ShowHomeView from './application/ShowHomeView'
-import ShowStatisticsView from './application/ShowStatisticsView'
-import OauthPrimaryView from './oauth/OauthPrimaryView'
-import OauthRedirectView from './oauth/OauthRedirectView'
-import OauthSecondaryView from './oauth/OauthSecondaryView'
-import CreateStreamView from './streams/CreateStreamView'
-import IndexStreamsView from './streams/IndexStreamsView'
-import ShowCurrentStreamView from './streams/ShowCurrentStreamView'
-import ShowStreamView from './streams/ShowStreamView'
-import ShowCurrentUserView from './users/ShowCurrentUserView'
-import ShowUserView from './users/ShowUserView'
+import ShowHomeView from './application/ShowHomeView.svelte'
+import ShowStatsView from './application/ShowStatsView.svelte'
+import OauthPrimaryView from './oauth/OauthPrimaryView.svelte'
+import OauthRedirectView from './oauth/OauthRedirectView.svelte'
+import OauthSecondaryView from './oauth/OauthSecondaryView.svelte'
+import CreateStreamView from './streams/CreateStreamView.svelte'
+import IndexStreamsView from './streams/IndexStreamsView.svelte'
+import ShowCurrentStreamView from './streams/ShowCurrentStreamView.svelte'
+import ShowStreamView from './streams/ShowStreamView.svelte'
+import ShowCurrentUserView from './users/ShowCurrentUserView.svelte'
+import ShowUserView from './users/ShowUserView.svelte'
 
 export {
   ShowHomeView,
-  ShowStatisticsView,
+  ShowStatsView,
   OauthPrimaryView,
   OauthRedirectView,
   OauthSecondaryView,
