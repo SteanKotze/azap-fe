@@ -1,4 +1,4 @@
-const streamingPlatforms = [
+const streaming_platforms = [
   {
     value: 'independent',
     label: 'Independent',
@@ -13,7 +13,7 @@ const streamingPlatforms = [
   },
 ]
 
-const musicPlatforms = [
+const music_platforms = [
   {
     value: 'spotify',
     label: 'Spotify',
@@ -32,4 +32,4 @@ const musicPlatforms = [
   },
 ]
 
-export { streamingPlatforms, musicPlatforms }
+export { streaming_platforms, music_platforms }

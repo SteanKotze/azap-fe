@@ -5,6 +5,6 @@
 <Card>
   ShowCurrentStreamView
   <div class="flex w-full">
-    <Spinner className="mx-auto" />
+    <Spinner class_name="mx-auto" />
   </div>
 </Card>

@@ -6,7 +6,7 @@
   export let streamer
 
   //  --- Functionality ---
-  const renderCss = () => {
+  const render_css = () => {
     switch (streamer.platform) {
       case 'twitch':
         return ' my-auto h-6 w-5'
@@ -15,7 +15,7 @@
     }
   }
 
-  const renderChannelLink = () => {
+  const render_channel_link = () => {
     switch (streamer.platform) {
       case 'twitch':
         return `https://www.twitch.tv/${streamer.channel}`
@@ -25,9 +25,9 @@
   }
 </script>
 
-<Link className="mx-auto my-auto" to={renderChannelLink()} textSize="text-xl">
+<Link class_name="mx-auto my-auto" to={render_channel_link()} text_size="text-xl">
   <div class="flex flex-row mx-auto space-x-3">
-    <img class={renderCss()} src={`images/logos/${streamer.platform}.png`} alt={`${streamer.platform} logo`} />
+    <img class={render_css()} src={`images/logos/${streamer.platform}.png`} alt={`${streamer.platform} logo`} />
     <p>{streamer.name}</p>
   </div>
 </Link>

@@ -12,21 +12,21 @@
       <IndexStreamerPlatformLinks platforms={data.platforms} />
     </div>
     <div class="flex flex-row space-x-4">
-      <SmolCard className="w-1/3">
+      <SmolCard class_name="w-1/3">
         <div class="flex flex-col space-y-4 py-2">
-          <Button className="mx-auto w-2/3" onClick={() => navigate('/streams/create')}>Go Live!</Button>
+          <Button class_name="mx-auto w-2/3" on_click={() => navigate('/streams/create')}>Go Live!</Button>
           {#each data.platforms as platform}
             <Button
-              className="mx-auto w-2/3"
+              class_name="mx-auto w-2/3"
               enabled={!platform.authenticated}
-              onClick={() => history.push(`/api/oauth/${platform.name.toLowerCase()}`)}
+              on_click={() => navigate(`/api/oauth/${platform.name.toLowerCase()}`)}
             >
               + {platform.name}
             </Button>
           {/each}
         </div>
       </SmolCard>
-      <SmolCard className="w-2/3">User Details from Spotify</SmolCard>
+      <SmolCard class_name="w-2/3">User Details from Spotify</SmolCard>
     </div>
     <SmolCard>User Past Stream Statistics</SmolCard>
   </div>

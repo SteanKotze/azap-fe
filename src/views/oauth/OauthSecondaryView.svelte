@@ -3,21 +3,21 @@
   import { Button, Card } from '../../components'
 
   //  --- Functionality ---
-  const twitchLogin = () => {
+  const twitch_login = () => {
     console.log('ToDo logging in with twitch')
   }
 
-  const youtubeLogin = () => {
+  const youtube_login = () => {
     console.log('ToDo logging in with youtube')
   }
 </script>
 
 <div class="h-full flex">
   <div class="m-auto">
-    <Card cardType="login">
+    <Card type="login">
       <div class="flex flex-col space-y-4">
-        <Button onClick={twitchLogin()}>Login With Twitch</Button>
-        <Button onClick={youtubeLogin()}>Login With Youtube</Button>
+        <Button on_click={twitch_login()}>Login With Twitch</Button>
+        <Button on_click={youtube_login()}>Login With Youtube</Button>
       </div>
     </Card>
   </div>

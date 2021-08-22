@@ -3,12 +3,13 @@
   import { Link } from 'svelte-routing'
 
   //  --- Props ---
-  export let className = ''
+  export let class_name = ''
   export let hover = true
-  export let textSize = ''
+  export let text_color = 'text-gold'
+  export let text_size = ''
   export let to = undefined
 </script>
 
-<Link {to} class={`cursor-pointer text-gold ${hover ? 'hover:text-gold-light' : '' } ${className} ${textSize}`}>
+<Link {to} class={`cursor-pointer ${text_color} ${hover ? 'hover:text-gold-light' : '' } ${class_name} ${text_size}`}>
   <slot />
 </Link>

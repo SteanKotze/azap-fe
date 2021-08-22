@@ -1,9 +1,9 @@
 <script>
-  export let className = ''
+  export let class_name = ''
   export let color = 'white'
 </script>
 
-<div class={className}>
+<div class={class_name}>
   <svg
     fill={color}
     class="w-9 h-9"

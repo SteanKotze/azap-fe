@@ -3,15 +3,15 @@
   import { Button, Card } from '../../components'
 
   //  --- Functionality ---
-  const spotifyLogin = () => {
+  const spotify_login = () => {
     console.log('ToDo')
   }
 </script>
 
 <div class="h-full flex">
   <div class="m-auto">
-    <Card cardType="login">
-      <Button onClick={spotifyLogin()}>Login With Spotify</Button>
+    <Card type="login">
+      <Button on_click={spotify_login()}>Login With Spotify</Button>
     </Card>
   </div>
 </div>

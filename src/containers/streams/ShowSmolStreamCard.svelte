@@ -5,16 +5,16 @@
   import ShowStreamerTitle from '../streamers/ShowStreamerTitle.svelte'
 
   //  --- Props ---
-  export let className
+  export let class_name = ''
   export let stream
 </script>
 
-<SmolCard className={className || ''}>
+<SmolCard class_name={class_name}>
   <div class="flex flex-col space-y-2">
     <ShowStreamerTitle streamer={stream.streamer} />
     <p>Song: {stream.listening_to}</p>
     <p>Viewers: {stream.viewers}</p>
     <p>Listeners: {stream.listeners}</p>
-    <Button onClick={() => navigate(`/streams/${stream.streamer.uuid}`)}>Go To</Button>
+    <Button on_click={() => navigate(`/streams/${stream.streamer.uuid}`)}>Go To</Button>
   </div>
 </SmolCard>
