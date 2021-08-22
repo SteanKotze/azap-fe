@@ -22,7 +22,6 @@ const Spinner = ({ className, color }) => {
             to='360 50 50'
             type='rotate'></animateTransform>
         </path>
-        `
       </svg>
     </div>
   )
