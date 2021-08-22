@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'pulse-slow': 'pulse 4s infinite',
+        'pulse-slow': 'pulse 3s infinite',
       },
       colors: {
         asphalt: {
@@ -31,8 +31,8 @@ module.exports = {
           950: '#959595',
         },
         azap: {
-          dark: '#191a1a',
-          DEFAULT: '#252629',
+          dark: '#16181a',
+          DEFAULT: '#242729',
           light: '#313536',
           //
           cyan: '#007070',
