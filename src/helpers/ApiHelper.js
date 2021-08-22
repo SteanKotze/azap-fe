@@ -9,6 +9,10 @@ const ApiHelper = () => {
     },
 
     //  --- Streams ---
+    createStream: (name, streamingPlatform, musicPlatform) => {
+      // ToDo
+      return Promise.resolve()
+    },
     indexStreams: () => {
       return AjaxHelper.get(`${process.env.REACT_APP_BACKEND_URL}/api/streams`)
     },
