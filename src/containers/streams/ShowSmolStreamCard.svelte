@@ -9,7 +9,7 @@
   export let stream
 </script>
 
-<SmolCard class_name={class_name}>
+<SmolCard {class_name}>
   <div class="flex flex-col space-y-2">
     <ShowStreamerTitle streamer={stream.streamer} />
     <p>Song: {stream.listening_to}</p>

@@ -14,7 +14,9 @@
     <div class="flex flex-row space-x-4">
       <SmolCard class_name="w-1/3">
         <div class="flex flex-col space-y-4 py-2">
-          <Button class_name="mx-auto w-2/3" on_click={() => navigate('/streams/create')}>Go Live!</Button>
+          <Button class_name="mx-auto w-2/3" on_click={() => navigate('/streams/create')}
+            >Go Live!</Button
+          >
           {#each data.platforms as platform}
             <Button
               class_name="mx-auto w-2/3"

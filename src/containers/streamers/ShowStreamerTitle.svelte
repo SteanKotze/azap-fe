@@ -27,7 +27,11 @@
 
 <Link class_name="mx-auto my-auto" to={render_channel_link()} text_size="text-xl">
   <div class="flex flex-row mx-auto space-x-3">
-    <img class={render_css()} src={`images/logos/${streamer.platform}.png`} alt={`${streamer.platform} logo`} />
+    <img
+      class={render_css()}
+      src={`images/logos/${streamer.platform}.png`}
+      alt={`${streamer.platform} logo`}
+    />
     <p>{streamer.name}</p>
   </div>
 </Link>

@@ -4,11 +4,11 @@
 
   //  --- Functionality ---
   const twitch_login = () => {
-    console.log('ToDo logging in with twitch')
+    console.error('ToDo')
   }
 
   const youtube_login = () => {
-    console.log('ToDo logging in with youtube')
+    console.error('ToDo')
   }
 </script>
 

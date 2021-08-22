@@ -10,6 +10,11 @@
   export let to = undefined
 </script>
 
-<Link {to} class={`cursor-pointer ${text_color} ${hover ? 'hover:text-gold-light' : '' } ${class_name} ${text_size}`}>
+<Link
+  {to}
+  class={`cursor-pointer ${text_color} ${
+    hover ? 'hover:text-gold-light' : ''
+  } ${class_name} ${text_size}`}
+>
   <slot />
 </Link>

@@ -6,7 +6,10 @@
 </script>
 
 {#if enabled}
-  <button class={`border focus:outline-none h-9 my-auto px-3 rounded-md ${class_name} ${background}`} on:click={on_click}>
+  <button
+    class={`border focus:outline-none h-9 my-auto px-3 rounded-md ${class_name} ${background}`}
+    on:click={on_click}
+  >
     <slot />
   </button>
 {:else}

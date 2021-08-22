@@ -1,6 +1,7 @@
 <script>
   import { Card } from '../../components'
   import { ShowStatisticsCard, IndexStreamsRedirectCard } from '../../containers'
+  console.error('ToDo')
 </script>
 
 <div class="flex flex-col space-y-6">

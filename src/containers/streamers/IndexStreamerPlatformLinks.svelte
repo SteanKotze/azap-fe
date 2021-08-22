@@ -23,7 +23,11 @@
         </Link>
       {:else}
         <Link class_name="my-auto">
-          <img class="w-5 h-5" src={`/images/logos/${platform.name}.png`} alt={`${platform.name}-logo`} />
+          <img
+            class="w-5 h-5"
+            src={`/images/logos/${platform.name}.png`}
+            alt={`${platform.name}-logo`}
+          />
         </Link>
       {/if}
     {/if}
