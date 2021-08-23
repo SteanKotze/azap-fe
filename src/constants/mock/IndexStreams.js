@@ -10,7 +10,7 @@ const streams = [
     listeners: 7016,
     listening_to: {
       title: 'Kream - Drowning',
-      uri: ''
+      uri: '',
     },
     up_time: '4h25m17',
   },
@@ -25,7 +25,7 @@ const streams = [
     listeners: 3607,
     listening_to: {
       title: 'Memories - Moleman',
-      uri: ''
+      uri: '',
     },
     up_time: '4h25m17',
   },
@@ -40,7 +40,7 @@ const streams = [
     listeners: 2160,
     listening_to: {
       title: 'Dark Prince, Pt.3 - Atrey',
-      uri: ''
+      uri: '',
     },
     up_time: '4h25m17',
   },
@@ -55,7 +55,7 @@ const streams = [
     listeners: 1051,
     listening_to: {
       title: 'Dissociative - Traf',
-      uri: ''
+      uri: '',
     },
     up_time: '4h25m17',
   },
@@ -70,7 +70,7 @@ const streams = [
     listeners: 7601,
     listening_to: {
       title: 'Winter - OVERWERK',
-      uri: ''
+      uri: '',
     },
     up_time: '4h25m17',
   },
