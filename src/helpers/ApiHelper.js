@@ -1,5 +1,4 @@
 import AjaxHelper from './AjaxHelper'
-// ToDo baseUrl
 
 const ApiHelper = () => {
   return {

@@ -7,7 +7,7 @@
 
   //  --- Functionality ---
   const render_css = () => {
-    switch (streamer.platform) {
+    switch (streamer.platform.toLowerCase()) {
       case 'twitch':
         return ' my-auto h-6 w-5'
       default:

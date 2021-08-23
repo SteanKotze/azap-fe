@@ -8,9 +8,9 @@
 <div class="h-full">
   <Card>
     <p class="text-center pb-4 text-2xl">Active Audio Streams</p>
-    <div class="flex flex-row flex-wrap space-x-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
       {#each streams as stream}
-        <ShowSmolStreamCard class_name="w-64" {stream} />
+        <ShowSmolStreamCard class_name='w-full' {stream} />
       {/each}
     </div>
   </Card>
