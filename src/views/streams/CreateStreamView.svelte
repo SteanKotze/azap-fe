@@ -22,14 +22,11 @@
   <div class="flex flex-col space-y-6">
     <p class="mx-auto text-2xl">Create a New Stream</p>
     <div class="flex flex-row justify-between w-full mt-5">
-      <label class="w-1/3" for="new-stream-title">Stream Title:</label>
-      <TextInput
-        class_name="text-azap-dark w-2/3"
-        bind:value={stream_title}
-        name="new-stream-title" />
+      <label class="w-1/4" for="new-stream-title">Stream Title:</label>
+      <TextInput class_name="w-3/4" bind:value={stream_title} name="new-stream-title" />
     </div>
     <div class="flex flex-row w-full">
-      <label class="w-1/3" for="stream-platform-select">Stream Platform:</label>
+      <label class="w-1/4" for="stream-platform-select">Stream Platform:</label>
       <Select
         bind:value={streaming_platform}
         class_name="w-40"
@@ -37,7 +34,7 @@
         name="stream-platform-select" />
     </div>
     <div class="flex flex-row w-full mt-5">
-      <label class="w-1/3" for="music-platform-select">Music Platform:</label>
+      <label class="w-1/4" for="music-platform-select">Music Platform:</label>
       <Select
         class_name="w-40"
         options={music_platforms}

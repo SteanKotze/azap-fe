@@ -6,7 +6,7 @@
   //  --- Functionality ---
   const render_card_type = () => {
     if (type === 'login') return 'md:bg-azap-light h-auto 2-96 mx-auto'
-    return 'bg-azap-light'
+    return 'md:bg-azap-light'
   }
 </script>
 

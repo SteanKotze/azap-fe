@@ -10,11 +10,11 @@
 </script>
 
 <SmolCard {class_name}>
-  <div class="flex flex-col space-y-2">
+  <div class="flex flex-col space-y-3">
     <ShowStreamerTitle streamer={stream.streamer} />
-    <p>Song: {stream.listening_to}</p>
-    <p>Viewers: {stream.viewers}</p>
-    <p>Listeners: {stream.listeners}</p>
+    <p class="px-1">Viewers: {stream.viewers}</p>
+    <p class="px-1">Listeners: {stream.listeners}</p>
+    <p class="px-1">Song: {stream.listening_to}</p>
     <Button on_click={() => navigate(`/streams/${stream.streamer.uuid}`)}>Go To</Button>
   </div>
 </SmolCard>

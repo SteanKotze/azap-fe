@@ -7,7 +7,7 @@ module.exports = {
   plugins: [],
   purge: {
     content: ['./src/**/*.svelte'],
-    enabled: production, // disable purge in dev
+    enabled: production,
   },
   theme: {
     extend: {
@@ -15,6 +15,12 @@ module.exports = {
         'pulse-slow': 'pulse 3s infinite',
       },
       colors: {
+        asphalt: {
+          darkest: '#050505',
+          dark: '#202020',
+          DEFAULT: '#707070',
+          light: '#DDDDDD',
+        },
         azap: {
           dark: '#16181a',
           DEFAULT: '#242729',
