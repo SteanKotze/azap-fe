@@ -6,7 +6,7 @@
   export let class_name = ''
   export let hover = true
   export let text_color = 'text-gold'
-  export let text_size = ''
+  export let text_size = 'text-lg'
   export let to = undefined
 </script>
 

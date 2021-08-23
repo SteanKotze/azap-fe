@@ -16,7 +16,7 @@
     <p class="px-1">Listeners: {stream.listeners}</p>
     <p class="px-1">
       Song: 
-      <Link>{stream.listening_to}</Link>
+      <Link to={stream.listening_to.uri} text_size='text-md'>{stream.listening_to.title}</Link>
     </p>
     <Button on_click={() => navigate(`/streams/${stream.streamer.uuid}`)}>Go To</Button>
   </div>
