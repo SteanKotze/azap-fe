@@ -1,48 +1,39 @@
 <script>
   //  --- Imports ---
-  import { Router, Route } from 'svelte-routing'
+  import Router from 'svelte-spa-router'
   import {
     ShowHomeView,
     ShowStatsView,
     OauthPrimaryView,
     OauthRedirectView,
-    OauthSecondaryView,
     CreateStreamView,
     IndexStreamsView,
     ShowCurrentStreamView,
     ShowStreamView,
     ShowCurrentUserView,
     ShowUserView,
-  } from './views/index'
+  } from './views'
   import Layout from './layout/Layout.svelte'
 
-  //  --- Props ---
-  export let url = ''
+  //  --- Routes ---
+  const routes = {
+    "/oauth/redirect": OauthRedirectView,
+    "/oauth": OauthPrimaryView,
+    "/streams/create": CreateStreamView,
+    "/streams/me": ShowCurrentStreamView,
+    "/streams/:uuid": ShowStreamView,
+    "/streams": IndexStreamsView,
+    "/users/me": ShowCurrentUserView,
+    "/users/:uuid": ShowUserView,
+    "/stats": ShowStatsView,
+    "/": ShowHomeView,
+    "*": ShowHomeView
+  }
 </script>
 
-<Router {url}>
-  <Layout>
-    <!-- OAuth -->
-    <Route path="oauth/redirect"><OauthRedirectView /></Route>
-    <Route path="oauth/primary"><OauthPrimaryView /></Route>
-    <Route path="oauth/secondary"><OauthSecondaryView /></Route>
-    <!-- Streams -->
-    <Route path="streams/create"><CreateStreamView /></Route>
-    <Route path="streams/me"><ShowCurrentStreamView /></Route>
-    <Route path="streams/:uuid" let:params>
-      <ShowStreamView uuid={params.uuid} />
-    </Route>
-    <Route path="streams"><IndexStreamsView /></Route>
-    <!-- Users -->
-    <Route path="users/me"><ShowCurrentUserView /></Route>
-    <Route path="users/:uuid" let:params>
-      <ShowUserView uuid={params.uuid} />
-    </Route>
-    <!-- Application -->
-    <Route path="stats"><ShowStatsView /></Route>
-    <Route path="/"><ShowHomeView /></Route>
-  </Layout>
-</Router>
+<Layout>
+  <Router {routes} />
+</Layout>
 
 <style global lang="postcss">
   @tailwind base;

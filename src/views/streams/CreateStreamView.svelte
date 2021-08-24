@@ -1,6 +1,6 @@
 <script>
   //  --- Imports ---
-  import { navigate } from 'svelte-routing'
+  import { push } from "svelte-spa-router"
   import { Button, Card, TextInput, Select } from '../../components'
   import { streaming_platforms, music_platforms } from '../../constants/PlatformConstants.js'
 
@@ -14,7 +14,7 @@
     console.error('ToDo')
     if (stream_title.length <= 0 || music_platform.length <= 0 || streaming_platform.length <= 0)
       return
-    navigate('/streams/me')
+    push('/streams/me')
   }
 </script>
 

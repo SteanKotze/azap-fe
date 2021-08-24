@@ -1,6 +1,5 @@
 <script>
-  import { Link } from 'svelte-routing'
-  import { Button, Card } from '../../components'
+  import { Link, Button, Card } from '../../components'
 </script>
 
 <Card>

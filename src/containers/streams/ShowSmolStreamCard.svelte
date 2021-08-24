@@ -1,6 +1,6 @@
 <script>
   //  --- Imports ---
-  import { navigate } from 'svelte-routing'
+  import { push } from "svelte-spa-router"
   import { Button, SmolCard, Link } from '../../components'
   import ShowStreamerTitle from '../streamers/ShowStreamerTitle.svelte'
 
@@ -18,6 +18,6 @@
       Song:
       <Link to={stream.listening_to.uri} text_size="text-md">{stream.listening_to.title}</Link>
     </p>
-    <Button on_click={() => navigate(`/streams/${stream.streamer.uuid}`)}>Go To</Button>
+    <Button on_click={() => push(`/streams/${stream.streamer.uuid}`)}>Go To</Button>
   </div>
 </SmolCard>

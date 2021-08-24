@@ -1,6 +1,6 @@
 <script>
   //  --- Imports ---
-  import { navigate } from 'svelte-routing'
+  import { push } from "svelte-spa-router"
   import { Button, Card, SmolCard } from '../../components'
   import { IndexStreamerPlatformLinks } from '../../containers'
 
@@ -25,13 +25,13 @@
     <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
       <SmolCard class_name="w-full md:w-2/5">
         <div class="flex flex-col space-y-4 py-2">
-          <Button class_name="mx-auto w-2/3" on_click={() => navigate('/streams/create')}
+          <Button class_name="mx-auto w-2/3" on_click={() => push('/streams/create')}
             >Go Live!</Button>
           {#each data.platforms as platform}
             <Button
               class_name="mx-auto w-2/3"
               enabled={!platform.authenticated}
-              on_click={() => navigate(`/api/oauth/${platform.name.toLowerCase()}`)}>
+              on_click={() => push(`/api/oauth/${platform.name.toLowerCase()}`)}>
               + {platform.name}
             </Button>
           {/each}
