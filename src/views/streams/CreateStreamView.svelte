@@ -1,6 +1,6 @@
 <script>
   //  --- Imports ---
-  import { push } from "svelte-spa-router"
+  import { push } from 'svelte-spa-router'
   import { Button, Card, TextInput, Select } from '../../components'
   import { streaming_platforms, music_platforms } from '../../constants/PlatformConstants.js'
 

@@ -10,14 +10,15 @@
   export let to = ''
 </script>
 
-{#if (to[0] === '/')}
+{#if to[0] === '/'}
   <a
-    href={to} use:link
+    href={to}
+    use:link
     class={`cursor-pointer ${text_color} ${
       hover ? 'hover:text-gold-light' : ''
     } ${class_name} ${text_size}`}>
     <slot />
-  </a>  
+  </a>
 {:else}
   <a
     href={to}
@@ -25,5 +26,5 @@
       hover ? 'hover:text-gold-light' : ''
     } ${class_name} ${text_size}`}>
     <slot />
-  </a>  
+  </a>
 {/if}

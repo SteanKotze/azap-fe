@@ -1,6 +1,6 @@
 <script>
   //  --- Imports ---
-  import { push } from "svelte-spa-router"
+  import { push } from 'svelte-spa-router'
   import { Button, Card, SmolCard } from '../../components'
   import { IndexStreamerPlatformLinks } from '../../containers'
 

@@ -14,49 +14,47 @@ import {
 
 //  --- Routes ---
 const routes = {
-  "/oauth/redirect": OauthRedirectView,
-  "/oauth": OauthPrimaryView,
-  "/streams/create": wrap({
+  '/oauth/redirect': OauthRedirectView,
+  '/oauth': OauthPrimaryView,
+  '/streams/create': wrap({
     component: CreateStreamView,
     userData: {
-      authenticated: false
+      authenticated: false,
     },
     conditions: [
       (detail) => {
         return detail.userData.authenticated
-      }
-    ]
+      },
+    ],
   }),
-  "/streams/me": wrap({
+  '/streams/me': wrap({
     component: ShowCurrentStreamView,
     userData: {
-      authenticated: false
+      authenticated: false,
     },
     conditions: [
       (detail) => {
         return detail.userData.authenticated
-      }
-    ]
+      },
+    ],
   }),
-  "/streams/:uuid": ShowStreamView,
-  "/streams": IndexStreamsView,
-  "/users/me": wrap({
+  '/streams/:uuid': ShowStreamView,
+  '/streams': IndexStreamsView,
+  '/users/me': wrap({
     component: ShowCurrentUserView,
     userData: {
-      authenticated: false
+      authenticated: false,
     },
     conditions: [
       (detail) => {
         return detail.userData.authenticated
-      }
-    ]
+      },
+    ],
   }),
-  "/users/:uuid": ShowUserView,
-  "/stats": ShowStatsView,
-  "/": ShowHomeView,
-  "*": ShowHomeView
+  '/users/:uuid': ShowUserView,
+  '/stats': ShowStatsView,
+  '/': ShowHomeView,
+  '*': ShowHomeView,
 }
 
-export {
-  routes
-}
+export { routes }
