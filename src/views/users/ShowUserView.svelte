@@ -1,5 +1,14 @@
 <script>
+  //  --- Imports ---
   import { Spinner, Card } from '../../components'
+
+  //  --- Props ---
+  export let uuid
+
+  //  --- Variables ---
+
+  //  --- Functionality ---
+  console.error('ToDo')
 </script>
 
 <Card>

@@ -1,9 +1,20 @@
 <script>
+  //  --- Imports ---
   import { navigate } from 'svelte-routing'
   import { Button, Card, SmolCard } from '../../components'
   import { IndexStreamerPlatformLinks } from '../../containers'
+
+  //  --- Variables ---
   import data from '../../constants/mock/ShowUser'
+
+  //  --- ToDo ---
+  console.error('ToDo - should have user data saved', data)
+  console.error("ToDo - should change 'Go Live!' button based on whether user is already streaming")
 </script>
+
+<svelte:head>
+  <title>It you! - Azap</title>
+</svelte:head>
 
 <Card>
   <div class="flex flex-col space-y-4">

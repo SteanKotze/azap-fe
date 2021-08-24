@@ -1,5 +1,9 @@
 <script>
+  //  --- Imports ---
   import { Spinner, Card } from '../../components'
+
+  //  --- Props ---
+  export let uuid
 </script>
 
 <Card>

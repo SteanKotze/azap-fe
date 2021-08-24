@@ -26,9 +26,13 @@ module.exports = {
           DEFAULT: '#242729',
           light: '#313536',
         },
+        cyan: {
+          DEFAULT: '#007070',
+          light: '#00bdbd',
+        },
         gold: {
-          light: '#fdd548',
           DEFAULT: '#c0b000',
+          light: '#fdd548',
         },
         maroon: {
           light: '#ae0e2e',
